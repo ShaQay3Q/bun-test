@@ -6,8 +6,8 @@ export default function Header() {
 			<header className='text-red-600 flex gap-3'>
 				<span className='font-bold'>Header:</span>
 				<Link href={"/"}>Home</Link>
-				<Link href={"/src/app/about"}>About</Link>
-				<Link href={"/src/app/contact"}>Contact</Link>
+				<Link href={"/about"}>About</Link>
+				<Link href={"/contact"}>Contact</Link>
 			</header>
 		</div>
 	);
