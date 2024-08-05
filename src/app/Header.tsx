@@ -9,6 +9,7 @@ export default function Header() {
 				<Link href={"/about"}>About</Link>
 				<Link href={"/contact"}>Contact</Link>
 				<Link href={"/count"}>Count</Link>
+				<Link href={"/todos"}>Todos</Link>
 			</header>
 		</div>
 	);
