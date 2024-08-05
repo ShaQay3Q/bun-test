@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // (navbar) is being ignored/invisible to the router, no app/navbar!
 export default function NavBarLayout({
 	children,
@@ -10,7 +12,12 @@ export default function NavBarLayout({
 		// without affecting the other pages
 		<div>
 			{children}
-			<nav>NavBar</nav>
+			<nav className='flex gap-6'>
+				<Link href='/'>Home</Link>
+				<Link href='/movies'>Movies</Link>
+				<Link href='/bookmarks'>Bookmarks</Link>
+				<Link href='/profile'>Profile</Link>
+			</nav>
 		</div>
 	);
 }
