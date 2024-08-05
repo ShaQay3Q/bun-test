@@ -5,7 +5,7 @@ export default function MovieDetailPage({
 }) {
 	return (
 		<div>
-			<span>Movie Details - {params.movieId}</span>
+			<span>Movie Details - movie id: {params.movieId}</span>
 		</div>
 	);
 }
