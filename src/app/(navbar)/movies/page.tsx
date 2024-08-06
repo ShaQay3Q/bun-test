@@ -3,6 +3,7 @@
 import { Movie, MovieResponse } from "@/lib/types/movie";
 import { getPosterImage } from "@/lib/utils";
 import axios from "axios";
+import Link from "next/link";
 
 // because it need to fetch the data from server before data renders
 export default async function MoviesPage() {
@@ -23,11 +24,15 @@ export default async function MoviesPage() {
 	return (
 		<div className='grid grid-cols-3 gap-3'>
 			{movies.map((movie) => (
-				<img
-					src={getPosterImage(movie.poster_path)}
-					alt={`poster of ${movie.title} movie`}
+				<Link
+					href={`/movies/${movie.id}`}
 					key={movie.id}
-				/>
+				>
+					<img
+						src={getPosterImage(movie.poster_path)}
+						alt={`poster of ${movie.title} movie`}
+					/>
+				</Link>
 			))}
 		</div>
 	);
