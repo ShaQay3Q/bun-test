@@ -29,6 +29,7 @@ export default async function MoviesPage() {
 					key={movie.id}
 				>
 					<img
+						g
 						src={getPosterImage(movie.poster_path)}
 						alt={`poster of ${movie.title} movie`}
 					/>
